@@ -1,0 +1,60 @@
+{
+  "header": {
+    "logo": "Souvenote",
+    "nav": {
+      "create": "Créer",
+      "templates": "Modèles",
+      "dashboard": "Tableau de bord"
+    },
+    "credits": "{count} crédits",
+    "signIn": "Connexion",
+    "getStarted": "Commencer"
+  },
+  "home": {
+    "headline": "Créez des moments inoubliables",
+    "subheadline": "Souvenote vous permet de concevoir des cartes de vœux haut de gamme accompagnées de musique personnalisée — une expérience cadeau de luxe qui arrive en quelques secondes et reste pour toujours.",
+    "ctaGetStarted": "Commencer — C'est gratuit",
+    "ctaBrowse": "Parcourir les modèles"
+  },
+  "auth": {
+    "tagline": "Des moments inoubliables",
+    "backToSignIn": "Retour à la connexion",
+    "signUp": {
+      "title": "Créez votre compte",
+      "bonus": "Commencez avec 1 carte + 1 chanson gratuites",
+      "email": "Courriel",
+      "password": "Mot de passe",
+      "submit": "Créer un compte",
+      "submitting": "Création en cours...",
+      "alreadyHaveAccount": "Vous avez déjà un compte ?",
+      "signInLink": "Se connecter"
+    },
+    "signIn": {
+      "title": "Bon retour",
+      "email": "Courriel",
+      "password": "Mot de passe",
+      "submit": "Connexion",
+      "submitting": "Connexion en cours...",
+      "forgotPassword": "Mot de passe oublié ?",
+      "noAccount": "Pas encore de compte ?",
+      "signUpLink": "Commencer"
+    },
+    "reset": {
+      "title": "Réinitialiser le mot de passe",
+      "subtitle": "Entrez votre adresse courriel et nous vous enverrons un lien de réinitialisation.",
+      "email": "Courriel",
+      "submit": "Envoyer le lien",
+      "submitting": "Envoi en cours...",
+      "confirmation": "Vérifiez votre courriel",
+      "confirmationDetail": "Nous avons envoyé un lien de réinitialisation à votre adresse courriel."
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "tryAgain": "Réessayer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "back": "Retour"
+  }
+}

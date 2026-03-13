@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Metallic palette base tokens ─────────────────────────────────────── */
+  --color-rose-gold: #B76E79;
+  --color-rose-gold-shadow: #8B5A5E;
+  --color-rose-gold-highlight: #D4A0A7;
+  --color-rose-gold-specular: #F0C8CC;
+
+  --color-gold: #C5A55A;
+  --color-gold-shadow: #7A5A20;
+  --color-gold-highlight: #E8D48A;
+  --color-gold-specular: #F5E8B0;
+
+  --color-silver: #A8A9AD;
+  --color-silver-shadow: #6A6A72;
+  --color-silver-highlight: #D8D9DD;
+  --color-silver-specular: #EBEBED;
+
+  --color-bronze: #CD7F32;
+  --color-bronze-shadow: #8B5A1A;
+  --color-bronze-highlight: #E8A86A;
+
+  /* ─── Dark anchors ─────────────────────────────────────────────────────── */
+  --color-obsidian: #0D0D0F;
+  --color-charcoal: #1A1A2E;
+  --color-smoky: #2A2A3A;
+
+  /* ─── Semantic tokens ─────────────────────────────────────────────────── */
+  --color-surface-base: #0D0D0F;
+  --color-surface-elevated: #1A1A2E;
+  --color-surface-card: #2A2A3A;
+  --color-text-body: #E8DDD4;
+  --color-text-muted: #9A9099;
+  --color-border-metallic: rgba(168, 169, 173, 0.3);
+
+  /* ─── Typography variables ─────────────────────────────────────────────── */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Jost", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* ─── Shadows ──────────────────────────────────────────────────────────── */
+  --shadow-luxury: 0 20px 60px rgba(183, 110, 121, 0.15), 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 8px 32px rgba(183, 110, 121, 0.1), 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  /* ─── Radii ────────────────────────────────────────────────────────────── */
+  --radius-card: 16px;
+  --radius-button: 9999px;
+  --radius-input: 8px;
+}
+
+:root {
+  /* ─── Multi-stop metallic gradient definitions ─────────────────────────── */
+  --gradient-rose-gold: linear-gradient(
+    135deg,
+    #8B5A5E 0%,
+    #B76E79 25%,
+    #D4A0A7 50%,
+    #F0C8CC 65%,
+    #D4A0A7 80%,
+    #9A6870 100%
+  );
+
+  --gradient-gold: linear-gradient(
+    135deg,
+    #7A5A20 0%,
+    #C5A55A 30%,
+    #E8D48A 55%,
+    #F5E8B0 65%,
+    #C5A55A 80%,
+    #8A6A28 100%
+  );
+
+  --gradient-silver: linear-gradient(
+    135deg,
+    #6A6A72 0%,
+    #A8A9AD 30%,
+    #D8D9DD 55%,
+    #EBEBED 65%,
+    #A8A9AD 80%,
+    #7A7A82 100%
+  );
+
+  --gradient-bronze: linear-gradient(
+    135deg,
+    #8B5A1A 0%,
+    #CD7F32 30%,
+    #E8A86A 55%,
+    #F0C090 65%,
+    #CD7F32 80%,
+    #9A5A20 100%
+  );
+}
+
+/* ─── Sheen keyframe animation ─────────────────────────────────────────────── */
+@keyframes sheen-pass {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 150%;
+  }
+}
+
+/* ─── Sheen utility class ───────────────────────────────────────────────────── */
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(240, 200, 204, 0.0) 20%,
+    rgba(240, 200, 204, 0.25) 45%,
+    rgba(255, 220, 200, 0.15) 55%,
+    rgba(240, 200, 204, 0.0) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+  left: -50%;
+}
+
+.sheen:hover::after {
+  animation: sheen-pass 0.6s ease-in-out forwards;
+}
+
+/* ─── Metallic border using gradient border technique ──────────────────────── */
+.metallic-border {
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.metallic-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(240, 200, 204, 0.6) 0%,
+    rgba(168, 169, 173, 0.3) 50%,
+    rgba(139, 90, 94, 0.4) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ─── Reduced motion guard ─────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Base layer ───────────────────────────────────────────────────────────── */
+@layer base {
+  body {
+    background-color: var(--color-surface-base);
+    color: var(--color-text-body);
+    font-family: var(--font-body);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}

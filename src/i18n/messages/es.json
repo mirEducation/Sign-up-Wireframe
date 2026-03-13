@@ -1,0 +1,60 @@
+{
+  "header": {
+    "logo": "Souvenote",
+    "nav": {
+      "create": "Crear",
+      "templates": "Plantillas",
+      "dashboard": "Panel"
+    },
+    "credits": "{count} créditos",
+    "signIn": "Iniciar sesión",
+    "getStarted": "Comenzar"
+  },
+  "home": {
+    "headline": "Crea momentos inolvidables",
+    "subheadline": "Souvenote te permite diseñar tarjetas de felicitación premium acompañadas de música personalizada — una experiencia de regalo de lujo que llega en segundos y perdura para siempre.",
+    "ctaGetStarted": "Comenzar — Es gratis",
+    "ctaBrowse": "Explorar plantillas"
+  },
+  "auth": {
+    "tagline": "Momentos inolvidables",
+    "backToSignIn": "Volver a iniciar sesión",
+    "signUp": {
+      "title": "Crea tu cuenta",
+      "bonus": "Comienza con 1 tarjeta + 1 canción gratis",
+      "email": "Correo",
+      "password": "Contraseña",
+      "submit": "Crear cuenta",
+      "submitting": "Creando cuenta...",
+      "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+      "signInLink": "Iniciar sesión"
+    },
+    "signIn": {
+      "title": "Bienvenido de nuevo",
+      "email": "Correo",
+      "password": "Contraseña",
+      "submit": "Iniciar sesión",
+      "submitting": "Iniciando sesión...",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "noAccount": "¿No tienes una cuenta?",
+      "signUpLink": "Comenzar"
+    },
+    "reset": {
+      "title": "Restablecer contraseña",
+      "subtitle": "Ingresa tu correo electrónico y te enviaremos un enlace de restablecimiento.",
+      "email": "Correo",
+      "submit": "Enviar enlace",
+      "submitting": "Enviando...",
+      "confirmation": "Revisa tu correo",
+      "confirmationDetail": "Hemos enviado un enlace de restablecimiento a tu dirección de correo."
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "tryAgain": "Intentar de nuevo",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "back": "Volver"
+  }
+}

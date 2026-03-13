@@ -1,0 +1,60 @@
+{
+  "header": {
+    "logo": "Souvenote",
+    "nav": {
+      "create": "Create",
+      "templates": "Templates",
+      "dashboard": "Dashboard"
+    },
+    "credits": "{count} credits",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "home": {
+    "headline": "Create Moments Worth Remembering",
+    "subheadline": "Souvenote lets you design premium greeting cards paired with personalised music — a luxury gift experience that arrives in seconds and stays forever.",
+    "ctaGetStarted": "Get Started — It's Free",
+    "ctaBrowse": "Browse Templates"
+  },
+  "auth": {
+    "tagline": "A card worth keeping.",
+    "backToSignIn": "Back to Sign In",
+    "signUp": {
+      "title": "Create Your Account",
+      "bonus": "Start with 1 free card + 1 free song",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Create Account",
+      "submitting": "Creating account...",
+      "alreadyHaveAccount": "Already have an account?",
+      "signInLink": "Sign in"
+    },
+    "signIn": {
+      "title": "Welcome Back",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign In",
+      "submitting": "Signing in...",
+      "forgotPassword": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Get started"
+    },
+    "reset": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email address and we'll send you a reset link.",
+      "email": "Email",
+      "submit": "Send Reset Link",
+      "submitting": "Sending...",
+      "confirmation": "Check your email",
+      "confirmationDetail": "We've sent a password reset link to your email address."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "Back"
+  }
+}

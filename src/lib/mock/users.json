@@ -1,0 +1,23 @@
+[
+  {
+    "id": "user-001",
+    "name": "Isabelle Fontaine",
+    "email": "isabelle.fontaine@example.com",
+    "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop",
+    "createdAt": "2024-09-15T10:32:00Z"
+  },
+  {
+    "id": "user-002",
+    "name": "Marcus Chen",
+    "email": "marcus.chen@example.com",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop",
+    "createdAt": "2024-11-03T14:18:00Z"
+  },
+  {
+    "id": "user-003",
+    "name": "Sofia Reinholt",
+    "email": "sofia.reinholt@example.com",
+    "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop",
+    "createdAt": "2025-01-22T09:45:00Z"
+  }
+]
