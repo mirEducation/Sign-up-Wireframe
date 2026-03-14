@@ -26,7 +26,7 @@ export function PageShell({
         backgroundColor: "var(--color-obsidian)",
       }}
     >
-      {/* Rose-gold ambient glow — upper right quadrant */}
+      {/* Gold ambient glow — upper right quadrant */}
       <div
         aria-hidden="true"
         style={{
@@ -36,21 +36,37 @@ export function PageShell({
           width: "60%",
           height: "60%",
           background:
-            "radial-gradient(ellipse at top right, rgba(183, 110, 121, 0.07) 0%, transparent 70%)",
+            "radial-gradient(ellipse at top right, rgba(197, 165, 90, 0.07) 0%, transparent 70%)",
           pointerEvents: "none",
           zIndex: 0,
         }}
       />
 
-      {/* Subtle mesh gradient overlay — rose gold + gold at low opacity */}
+      {/* Rose-gold ambient glow — lower left */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "50%",
+          height: "50%",
+          background:
+            "radial-gradient(ellipse at bottom left, rgba(183, 110, 121, 0.05) 0%, transparent 70%)",
+          pointerEvents: "none",
+          zIndex: 0,
+        }}
+      />
+
+      {/* Subtle mesh gradient overlay — bronze + silver at low opacity */}
       <div
         aria-hidden="true"
         style={{
           position: "absolute",
           inset: 0,
           background:
-            "radial-gradient(ellipse at 25% 75%, rgba(197, 165, 90, 0.04) 0%, transparent 60%), " +
-            "radial-gradient(ellipse at 75% 25%, rgba(183, 110, 121, 0.05) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 25% 75%, rgba(205, 127, 50, 0.04) 0%, transparent 60%), " +
+            "radial-gradient(ellipse at 75% 50%, rgba(168, 169, 173, 0.03) 0%, transparent 55%)",
           pointerEvents: "none",
           zIndex: 0,
         }}

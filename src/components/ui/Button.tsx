@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils/cn";
 
 const buttonVariants = cva(
   [
-    "inline-flex items-center justify-center font-medium",
+    "inline-flex items-center justify-center font-semibold",
     "transition-all duration-200",
     "rounded-full",
     "cursor-pointer select-none",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
     "disabled:pointer-events-none disabled:opacity-50",
-    "sheen",
+    "sheen bounce-hover",
   ],
   {
     variants: {
@@ -33,10 +33,11 @@ const buttonVariants = cva(
         ],
         ghost: [
           "bg-transparent",
-          "border border-[var(--color-rose-gold)]",
-          "text-[var(--color-rose-gold)]",
-          "hover:bg-[rgba(183,110,121,0.08)]",
-          "focus-visible:ring-[var(--color-rose-gold)]",
+          "border border-[var(--color-silver)]",
+          "text-[var(--color-silver-highlight)]",
+          "hover:bg-[rgba(168,169,173,0.08)]",
+          "hover:border-[var(--color-silver-highlight)]",
+          "focus-visible:ring-[var(--color-silver)]",
         ],
       },
       size: {
@@ -46,7 +47,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "rose-gold",
+      variant: "gold",
       size: "md",
     },
   }
@@ -59,9 +60,9 @@ export interface ButtonProps
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, style, ...props }, ref) => {
     const gradientStyle: React.CSSProperties =
-      variant === "rose-gold" || variant === undefined
+      variant === "rose-gold"
         ? { background: "var(--gradient-rose-gold)", ...style }
-        : variant === "gold"
+        : variant === "gold" || variant === undefined
           ? { background: "var(--gradient-gold)", ...style }
           : variant === "silver"
             ? { background: "var(--gradient-silver)", ...style }
@@ -71,7 +72,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(buttonVariants({ variant, size }), className)}
-        style={gradientStyle}
+        style={{
+          fontFamily: "var(--font-body)",
+          ...gradientStyle,
+        }}
         {...props}
       />
     );

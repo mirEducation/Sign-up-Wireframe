@@ -13,15 +13,16 @@ export function Logo() {
     >
       <span
         style={{
-          fontFamily: "var(--font-display)",
-          fontSize: "1.5rem",
-          fontWeight: 600,
+          fontFamily: "var(--font-logo)",
+          fontSize: "2rem",
+          fontWeight: 400,
           lineHeight: 1,
-          background: "var(--gradient-rose-gold)",
+          background: "var(--gradient-gold)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
-          letterSpacing: "0.02em",
+          letterSpacing: "0.01em",
+          filter: "drop-shadow(0 2px 4px rgba(197, 165, 90, 0.3))",
         }}
       >
         Souvenote

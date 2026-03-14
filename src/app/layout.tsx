@@ -1,25 +1,34 @@
 import type { Metadata } from "next";
 import {
-  Cormorant_Garamond,
-  Jost,
+  Sacramento,
+  Fredoka,
+  Nunito,
   JetBrains_Mono,
 } from "next/font/google";
 import "../styles/globals.css";
 import { IntlProvider } from "@/components/providers/IntlProvider";
 import { Header } from "@/components/layout/Header";
 
-const cormorantGaramond = Cormorant_Garamond({
+const sacramento = Sacramento({
+  variable: "--loaded-font-logo",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  preload: true,
+});
+
+const fredoka = Fredoka({
   variable: "--loaded-font-display",
   subsets: ["latin"],
-  weight: ["300", "600"],
+  weight: ["300", "400", "500", "600"],
   display: "optional",
   preload: true,
 });
 
-const jost = Jost({
+const nunito = Nunito({
   variable: "--loaded-font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "optional",
   preload: true,
 });
@@ -62,7 +71,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${cormorantGaramond.variable} ${jost.variable} ${jetbrainsMono.variable}`}
+      className={`${sacramento.variable} ${fredoka.variable} ${nunito.variable} ${jetbrainsMono.variable}`}
     >
       <body className="antialiased">
         <IntlProvider initialLocale={locale} initialMessages={messages}>

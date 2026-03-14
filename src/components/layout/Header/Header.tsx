@@ -115,7 +115,7 @@ export function Header() {
               </Button>
             </Link>
             <Link href="/sign-up" style={{ textDecoration: "none" }}>
-              <Button variant="rose-gold" size="sm">
+              <Button variant="gold" size="sm">
                 Get Started
               </Button>
             </Link>

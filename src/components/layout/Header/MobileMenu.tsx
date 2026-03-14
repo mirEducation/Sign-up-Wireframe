@@ -155,7 +155,7 @@ export function MobileMenu() {
                       display: "block",
                       fontFamily: "var(--font-display)",
                       fontSize: "clamp(2rem, 8vw, 3rem)",
-                      fontWeight: 300,
+                      fontWeight: 400,
                       color: "var(--color-text-body)",
                       textDecoration: "none",
                       lineHeight: 1.3,
@@ -163,7 +163,7 @@ export function MobileMenu() {
                       transition: "color 0.2s ease",
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.color = "var(--color-rose-gold)";
+                      e.currentTarget.style.color = "var(--color-rose-gold-highlight)";
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.color = "var(--color-text-body)";
@@ -195,10 +195,10 @@ export function MobileMenu() {
                       style={{
                         fontFamily: "var(--font-body)",
                         fontSize: "0.875rem",
-                        fontWeight: lang === language ? 600 : 400,
+                        fontWeight: lang === language ? 700 : 400,
                         color:
                           lang === language
-                            ? "var(--color-rose-gold)"
+                            ? "var(--color-gold)"
                             : "var(--color-silver)",
                         background: "transparent",
                         border: "none",
@@ -215,7 +215,7 @@ export function MobileMenu() {
                     style={{
                       fontFamily: "var(--font-body)",
                       fontSize: "0.875rem",
-                      fontWeight: 500,
+                      fontWeight: 600,
                       color: "var(--color-silver)",
                       background: "transparent",
                       border: "1px solid var(--color-border-metallic)",
@@ -274,7 +274,7 @@ export function MobileMenu() {
                       Sign In
                     </Button>
                     <Button
-                      variant="rose-gold"
+                      variant="gold"
                       size="lg"
                       onClick={() => {
                         close();

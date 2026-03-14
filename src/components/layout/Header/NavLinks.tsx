@@ -28,9 +28,9 @@ export function NavLinks() {
             style={{
               fontFamily: "var(--font-body)",
               fontSize: "0.875rem",
-              fontWeight: 400,
+              fontWeight: isActive ? 600 : 400,
               color: isActive
-                ? "var(--color-rose-gold)"
+                ? "var(--color-gold)"
                 : "var(--color-silver)",
               textDecoration: "none",
               letterSpacing: "0.06em",
@@ -41,7 +41,7 @@ export function NavLinks() {
             }}
             onMouseEnter={(e) => {
               if (!isActive) {
-                e.currentTarget.style.color = "var(--color-rose-gold)";
+                e.currentTarget.style.color = "var(--color-rose-gold-highlight)";
               }
             }}
             onMouseLeave={(e) => {
@@ -58,8 +58,9 @@ export function NavLinks() {
                   bottom: 0,
                   left: 0,
                   right: 0,
-                  height: "1px",
-                  background: "var(--gradient-rose-gold)",
+                  height: "2px",
+                  background: "var(--gradient-gold)",
+                  borderRadius: "1px",
                 }}
               />
             )}

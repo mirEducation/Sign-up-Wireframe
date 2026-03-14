@@ -8,6 +8,7 @@ const badgeVariants = cva(
     "text-xs font-semibold",
     "rounded-full",
     "select-none",
+    "auto-sheen",
   ],
   {
     variants: {
@@ -19,7 +20,7 @@ const badgeVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "rose-gold",
+      variant: "gold",
     },
   }
 );
@@ -35,12 +36,13 @@ export interface BadgeProps
   extends React.HTMLAttributes<HTMLSpanElement>,
     VariantProps<typeof badgeVariants> {}
 
-export function Badge({ className, variant = "rose-gold", style, ...props }: BadgeProps) {
+export function Badge({ className, variant = "gold", style, ...props }: BadgeProps) {
   return (
     <span
       className={cn(badgeVariants({ variant }), className)}
       style={{
-        background: gradientMap[variant ?? "rose-gold"],
+        fontFamily: "var(--font-body)",
+        background: gradientMap[variant ?? "gold"],
         ...style,
       }}
       {...props}

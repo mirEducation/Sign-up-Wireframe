@@ -64,13 +64,14 @@ export function UserMenu() {
         aria-label="User menu"
         aria-expanded={open}
       >
-        {/* Avatar circle */}
+        {/* Avatar circle — gold gradient */}
         <div
+          className="auto-sheen"
           style={{
             width: "32px",
             height: "32px",
             borderRadius: "50%",
-            background: "var(--gradient-rose-gold)",
+            background: "var(--gradient-gold)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -81,8 +82,8 @@ export function UserMenu() {
             style={{
               fontFamily: "var(--font-body)",
               fontSize: "0.6875rem",
-              fontWeight: 600,
-              color: "#2A1A14",
+              fontWeight: 700,
+              color: "#1A1200",
               letterSpacing: "0.05em",
             }}
           >
@@ -108,7 +109,7 @@ export function UserMenu() {
             minWidth: "160px",
             background: "var(--color-charcoal)",
             border: "1px solid var(--color-border-metallic)",
-            borderRadius: "10px",
+            borderRadius: "12px",
             overflow: "hidden",
             zIndex: 100,
             boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
@@ -125,7 +126,7 @@ export function UserMenu() {
               style={{
                 fontFamily: "var(--font-body)",
                 fontSize: "0.8125rem",
-                fontWeight: 500,
+                fontWeight: 600,
                 color: "var(--color-text-body)",
                 margin: 0,
               }}
@@ -171,7 +172,7 @@ export function UserMenu() {
                 transition: "background 0.15s ease, color 0.15s ease",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "rgba(183, 110, 121, 0.05)";
+                e.currentTarget.style.background = "rgba(183, 110, 121, 0.06)";
                 e.currentTarget.style.color = "var(--color-rose-gold)";
               }}
               onMouseLeave={(e) => {

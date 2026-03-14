@@ -52,7 +52,7 @@ export function LanguageToggle() {
         style={{
           fontFamily: "var(--font-body)",
           fontSize: "0.75rem",
-          fontWeight: 500,
+          fontWeight: 600,
           letterSpacing: "0.08em",
           color: "var(--color-silver)",
           background: "transparent",
@@ -63,8 +63,8 @@ export function LanguageToggle() {
           transition: "color 0.2s ease, border-color 0.2s ease",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.color = "var(--color-rose-gold)";
-          e.currentTarget.style.borderColor = "var(--color-rose-gold)";
+          e.currentTarget.style.color = "var(--color-bronze)";
+          e.currentTarget.style.borderColor = "var(--color-bronze)";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.color = "var(--color-silver)";
@@ -85,7 +85,7 @@ export function LanguageToggle() {
             minWidth: "80px",
             background: "var(--color-charcoal)",
             border: "1px solid var(--color-border-metallic)",
-            borderRadius: "8px",
+            borderRadius: "10px",
             overflow: "hidden",
             zIndex: 100,
             boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
@@ -105,15 +105,15 @@ export function LanguageToggle() {
                 padding: "0.5rem 0.75rem",
                 fontFamily: "var(--font-body)",
                 fontSize: "0.8125rem",
-                fontWeight: lang === language ? 500 : 400,
+                fontWeight: lang === language ? 600 : 400,
                 letterSpacing: "0.06em",
                 color:
                   lang === language
-                    ? "var(--color-rose-gold)"
+                    ? "var(--color-gold)"
                     : "var(--color-silver)",
                 background:
                   lang === language
-                    ? "rgba(183, 110, 121, 0.08)"
+                    ? "rgba(197, 165, 90, 0.1)"
                     : "transparent",
                 border: "none",
                 cursor: "pointer",
@@ -121,8 +121,8 @@ export function LanguageToggle() {
               }}
               onMouseEnter={(e) => {
                 if (lang !== language) {
-                  e.currentTarget.style.background = "rgba(183, 110, 121, 0.05)";
-                  e.currentTarget.style.color = "var(--color-rose-gold)";
+                  e.currentTarget.style.background = "rgba(205, 127, 50, 0.06)";
+                  e.currentTarget.style.color = "var(--color-bronze)";
                 }
               }}
               onMouseLeave={(e) => {

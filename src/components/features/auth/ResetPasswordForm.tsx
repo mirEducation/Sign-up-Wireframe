@@ -66,7 +66,7 @@ export function ResetPasswordForm() {
                 style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "clamp(1.75rem, 4vw, 2.25rem)",
-                  fontWeight: 600,
+                  fontWeight: 500,
                   color: "var(--color-text-body)",
                   lineHeight: 1.2,
                   margin: 0,
@@ -117,7 +117,7 @@ export function ResetPasswordForm() {
 
               <Button
                 type="submit"
-                variant="rose-gold"
+                variant="gold"
                 size="lg"
                 disabled={isLoading}
                 style={{ width: "100%", marginTop: "0.5rem" }}
@@ -141,7 +141,7 @@ export function ResetPasswordForm() {
                 style={{
                   color: "var(--color-rose-gold)",
                   textDecoration: "none",
-                  fontWeight: 500,
+                  fontWeight: 600,
                 }}
               >
                 {tAuth("backToSignIn")}
@@ -151,14 +151,14 @@ export function ResetPasswordForm() {
         ) : (
           <motion.div key="confirmation" {...transitionProps}>
             <div style={{ textAlign: "center" }}>
-              {/* Check icon */}
+              {/* Check icon — gold themed */}
               <div
                 style={{
                   width: "56px",
                   height: "56px",
                   borderRadius: "50%",
-                  background: "rgba(183, 110, 121, 0.12)",
-                  border: "1px solid rgba(183, 110, 121, 0.3)",
+                  background: "rgba(205, 127, 50, 0.12)",
+                  border: "1px solid rgba(205, 127, 50, 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -170,7 +170,7 @@ export function ResetPasswordForm() {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="var(--color-rose-gold)"
+                  stroke="var(--color-bronze)"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -183,7 +183,7 @@ export function ResetPasswordForm() {
                 style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "clamp(1.75rem, 4vw, 2.25rem)",
-                  fontWeight: 600,
+                  fontWeight: 500,
                   color: "var(--color-text-body)",
                   lineHeight: 1.2,
                   marginBottom: "0.75rem",
@@ -212,7 +212,7 @@ export function ResetPasswordForm() {
                   fontSize: "0.875rem",
                   color: "var(--color-rose-gold)",
                   textDecoration: "none",
-                  fontWeight: 500,
+                  fontWeight: 600,
                   letterSpacing: "0.04em",
                 }}
               >

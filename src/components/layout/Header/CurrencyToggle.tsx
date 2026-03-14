@@ -27,7 +27,7 @@ export function CurrencyToggle() {
       style={{
         fontFamily: "var(--font-body)",
         fontSize: "0.75rem",
-        fontWeight: 500,
+        fontWeight: 600,
         letterSpacing: "0.08em",
         color: "var(--color-silver)",
         background: "transparent",
@@ -39,8 +39,8 @@ export function CurrencyToggle() {
         whiteSpace: "nowrap",
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.color = "var(--color-rose-gold)";
-        e.currentTarget.style.borderColor = "var(--color-rose-gold)";
+        e.currentTarget.style.color = "var(--color-bronze)";
+        e.currentTarget.style.borderColor = "var(--color-bronze)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.color = "var(--color-silver)";

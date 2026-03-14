@@ -57,7 +57,7 @@ export function SignInForm() {
           style={{
             fontFamily: "var(--font-display)",
             fontSize: "clamp(1.75rem, 4vw, 2.25rem)",
-            fontWeight: 600,
+            fontWeight: 500,
             color: "var(--color-text-body)",
             lineHeight: 1.2,
             margin: 0,
@@ -126,7 +126,7 @@ export function SignInForm() {
 
         <Button
           type="submit"
-          variant="rose-gold"
+          variant="gold"
           size="lg"
           disabled={isLoading}
           style={{ width: "100%", marginTop: "0.25rem" }}
@@ -151,7 +151,7 @@ export function SignInForm() {
           style={{
             color: "var(--color-rose-gold)",
             textDecoration: "none",
-            fontWeight: 500,
+            fontWeight: 600,
           }}
         >
           {t("signUpLink")}
